@@ -9,7 +9,16 @@ const create = () => {
 };
 
 const invoke = async (interaction) => {
-  await interaction.reply({ content: 'Pong!', ephemeral: true });
+  interaction.reply({
+    content: 'Pong!',
+    withResponse: true,
+    ephemeral: true,
+  })
+  // .then((response) => console.log(`Reply sent with content ${response.resource.message.content}`))
+  .catch((error) => {
+    console.log('Error replying to Pong');
+    console.error(error);
+  });
 };
 
 export { create, invoke };
