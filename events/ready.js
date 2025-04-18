@@ -22,8 +22,8 @@ async function invoke(client) {
 	console.log(`Successfully logged in as ${client.user.tag}`);
 
   client.user.setActivity({
-    name: 'economy',
-    type: ActivityType.Watching
+    name: 'Wario Ware Twisted in Japanese',
+    type: ActivityType.Streaming
   });
 }
 
