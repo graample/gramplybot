@@ -1,0 +1,30 @@
+{
+  "name": "gramplybot",
+  "version": "1.0.0",
+  "description": "the bot that runs grample's twitch chat and discord",
+  "homepage": "https://github.com/graample/gramplybot#readme",
+  "bugs": {
+    "url": "https://github.com/graample/gramplybot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graample/gramplybot.git"
+  },
+  "license": "ISC",
+  "author": "grample",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^8.57.1",
+    "eslint": "^8.57.1"
+  }
+}
